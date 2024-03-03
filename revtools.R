@@ -5,13 +5,15 @@
 ## install.packages("RefManageR")
 library (revtools)
 library(RefManageR)
+library(bibliometrix)
 
 # merging bib files from wos and scopus
 # Read .bib files from Web of Science and Scopus
 
 wos_bib <- ReadBib("savedrecs.bib")
 
-scopus_bib <- ReadBib("scopus.bib")
+
+#scopus_bib <- ReadBib("scopus.bib")
 
 # Merge the two lists of references
 merged_bib <- c(wos_bib, scopus_bib)
