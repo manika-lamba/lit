@@ -40,7 +40,7 @@ Q<-mergeDbSources(M,P,remove.duplicated=TRUE)
 write.csv(Q, "merged.csv")
 
 # read file
-data <- read_bibliography("")
+data <- read_bibliography("merged.csv")
 
 # distribute tasks
 task <- distribute_tasks(data,reviewers,write_csv=TRUE, file_name="reviewer.csv",return_data=FALSE,...)
